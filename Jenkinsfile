@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/Luckodjo/helloword_jan_22.git'
+                git branch: 'main', url: 'https://github.com/Luckodjo/docker-Ima-repo.git'
             }
         }
         stage('Code Build') {
