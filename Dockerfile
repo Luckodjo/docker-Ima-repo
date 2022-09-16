@@ -9,8 +9,6 @@
 
 FROM httpd:2.4
 
-MAINTAINER luc-pratice
-RUN yum update
 
 COPY . /usr/local/apache2/htdocs
 ##Apache (proxies to MapProxy).
