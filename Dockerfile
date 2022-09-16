@@ -10,7 +10,8 @@
 FROM httpd:2.4
 
 MAINTAINER luc-pratice
-RUN apt-get update
-COPY ./index.html /usr/local/apache2/htdocs
+RUN yum update
+
+COPY . /usr/local/apache2/htdocs
 ##Apache (proxies to MapProxy).
-EXPOSE 8080
+
